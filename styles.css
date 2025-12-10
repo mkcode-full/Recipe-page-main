@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif:wght@400&family=Outfit:wght@400;600;700&display=swap');
+
+:root {
+  --white: hsl(0, 0%, 100%);
+
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+
+  --brown-800: hsl(14, 45%, 36%);
+
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+
+  --font-body-size: 16px;
+
+  --font-heading: "Young Serif", serif;
+  --font-body: "Outfit", sans-serif;
+  --font-weight-body: 400;
+  --font-weight-medium: 600;
+  --font-weight-bold: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--stone-150);
+    font-size: var(--font-body-size);
+    font-family: var(--font-body);
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--white);
+    max-width: 700px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 12px;
+}
+.card-image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+}
+
+.card-title {
+    color: var(--stone-900);
+    font-family: var(--font-heading);
+    margin-top: 30px;
+}
+
+.card-text {
+    font-size: 16px;
+    color: var(--stone-600);
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+
+.card-preparation{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    background-color: var(--stone-150);
+    margin-top: 20px;
+}
